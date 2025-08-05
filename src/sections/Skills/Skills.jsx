@@ -4,7 +4,7 @@ import './Skills.css'
 const skillsData = [
   { 
     name: 'HTML', 
-    level: 95, 
+    level: 100, 
     icon: '📄',
     color: '#E44D26',
     description: 'Semantic markup, accessibility, SEO optimization' 
@@ -18,42 +18,42 @@ const skillsData = [
   },
   { 
     name: 'JavaScript', 
-    level: 85, 
+    level: 80, 
     icon: '📜',
     color: '#F0DB4F',
     description: 'ES6+, functional programming, DOM manipulation' 
   },
   { 
     name: 'React', 
-    level: 80, 
+    level: 70, 
     icon: '⚛️',
     color: '#61DAFB',
     description: 'Hooks, Context API, performance optimization' 
   },
   { 
     name: 'Node.js', 
-    level: 75, 
+    level: 60, 
     icon: '🖥️',
     color: '#68A063',
     description: 'REST APIs, Express, middleware, authentication' 
   },
   { 
     name: 'Git', 
-    level: 85, 
+    level: 50, 
     icon: '🔀',
     color: '#F05032',
     description: 'Version control, branching strategies, CI/CD' 
   },
   { 
     name: 'UI/UX', 
-    level: 80, 
+    level: 90, 
     icon: '✨',
     color: '#FF4081',
     description: 'Wireframing, prototyping, user testing' 
   },
   { 
     name: 'TypeScript', 
-    level: 70, 
+    level: 40, 
     icon: '📝',
     color: '#3178C6',
     description: 'Type safety, interfaces, generics' 
