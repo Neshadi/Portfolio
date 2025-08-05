@@ -56,7 +56,7 @@ export const About = () => {
             <div className="about-image-wrapper">
               <div className="about-image-frame">
                 <img 
-                  src="/images/about.png" 
+                  src={`${import.meta.env.BASE_URL}images/about.png`} 
                   alt="Profile" 
                   className="about-image"
                 />

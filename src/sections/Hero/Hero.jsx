@@ -191,11 +191,8 @@ export const Hero = () => {
             animate="animate"
           >
             <div className="placeholder-image">
-              <img 
-                src="/images/my-profile.png" 
-                alt="Neshadi" 
-                className="hero-profile-image"
-              />
+              <img src={`${import.meta.env.BASE_URL}images/my-profile.png`} alt="Neshadi" className="hero-profile-image" />
+
               <motion.div 
                 className="glow-effect"
                 variants={circleVariants}

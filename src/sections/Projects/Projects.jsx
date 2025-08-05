@@ -12,7 +12,7 @@ export const Projects = () => {
       title: 'E-commerce Platform',
       description: 'Full-featured online store with cart, payments, and admin dashboard',
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: '/images/ecommerce.png',
+      image: `${import.meta.env.BASE_URL}images/ecommerce.png`,
       category: 'web',
       githubLink: '#',
       liveLink: '#'
@@ -22,7 +22,7 @@ export const Projects = () => {
       title: 'Fitness Tracker',
       description: 'Mobile app for workout tracking with progress analytics',
       tags: ['React Native', 'Firebase', 'Redux'],
-      image: '/images/fitness-app.png',
+      image: `${import.meta.env.BASE_URL}images/fitness-app.png`,
       category: 'mobile',
       githubLink: '#',
       liveLink: '#'
@@ -32,7 +32,7 @@ export const Projects = () => {
       title: 'Portfolio Website',
       description: 'Modern responsive portfolio with dark/light mode',
       tags: ['React', 'Framer Motion', 'SCSS'],
-      image: '/images/portfolio.jpg',
+      image: `${import.meta.env.BASE_URL}images/portfolio.jpg`,
       category: 'web',
       githubLink: '#',
       liveLink: '#'
@@ -42,7 +42,7 @@ export const Projects = () => {
       title: 'Task Manager',
       description: 'Productivity app with drag-n-drop interface',
       tags: ['Flutter', 'Dart', 'SQLite'],
-      image: '/images/task-manager.jpg',
+      image: `${import.meta.env.BASE_URL}images/task-manager.jpg`,
       category: 'mobile',
       githubLink: '#',
       liveLink: '#'
@@ -52,7 +52,7 @@ export const Projects = () => {
       title: 'Weather Dashboard',
       description: 'Real-time weather data visualization',
       tags: ['React', 'Chart.js', 'API'],
-      image: '/images/weather-app.jpg',
+      image: `${import.meta.env.BASE_URL}images/weather-app.jpg`,
       category: 'web',
       githubLink: '#',
       liveLink: '#'
@@ -62,7 +62,7 @@ export const Projects = () => {
       title: 'Recipe Finder',
       description: 'Discover recipes based on ingredients',
       tags: ['Vue.js', 'Firebase', 'Spoonacular API'],
-      image: '/images/recipe-app.jpg',
+      image: `${import.meta.env.BASE_URL}images/recipe-app.jpg`,
       category: 'web',
       githubLink: '#',
       liveLink: '#'
