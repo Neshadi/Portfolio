@@ -42,7 +42,7 @@ export const Projects = () => {
       title: 'Task Manager',
       description: 'Productivity app with drag-n-drop interface',
       tags: ['Flutter', 'Dart', 'SQLite'],
-      image: `${import.meta.env.BASE_URL}images/task-manager.jpg`,
+      image: `${import.meta.env.BASE_URL}images/task-manager.png`,
       category: 'mobile',
       githubLink: '#',
       liveLink: '#'
@@ -52,7 +52,7 @@ export const Projects = () => {
       title: 'Weather Dashboard',
       description: 'Real-time weather data visualization',
       tags: ['React', 'Chart.js', 'API'],
-      image: `${import.meta.env.BASE_URL}images/weather-app.jpg`,
+      image: `${import.meta.env.BASE_URL}images/weather-app.png`,
       category: 'web',
       githubLink: '#',
       liveLink: '#'
@@ -62,7 +62,7 @@ export const Projects = () => {
       title: 'Recipe Finder',
       description: 'Discover recipes based on ingredients',
       tags: ['Vue.js', 'Firebase', 'Spoonacular API'],
-      image: `${import.meta.env.BASE_URL}images/recipe-app.jpg`,
+      image: `${import.meta.env.BASE_URL}images/recipe-app.png`,
       category: 'web',
       githubLink: '#',
       liveLink: '#'
