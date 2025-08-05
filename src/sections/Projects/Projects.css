@@ -1,5 +1,5 @@
 .projects-section {
-  padding: 8rem 0;
+  padding: 2rem 0;
   position: relative;
   background-color: rgba(37, 99, 235, 0.05);
 }
@@ -22,7 +22,7 @@
 .projects-heading {
   font-size: 3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(to right, var(--primary-color),  #ff0000,   var(--secondary-color));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

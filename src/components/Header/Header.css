@@ -56,6 +56,10 @@
 
 .logo-text {
   position: relative;
+  background: linear-gradient(to right, var(--primary-color),   var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .logo-dot {

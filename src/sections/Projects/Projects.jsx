@@ -93,7 +93,7 @@ export const Projects = () => {
           transition={{ duration: 0.6 }}
           className="projects-header"
         >
-          <h2 className="projects-heading">My Projects</h2>
+          <h2 className="projects-heading">Projects</h2>
           <p className="projects-subheading">Explore my recent work and creations</p>
         </motion.div>
         
