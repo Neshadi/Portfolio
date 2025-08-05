@@ -104,7 +104,7 @@ export const Projects = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {['all', 'web', 'mobile'].map((filter) => (
+          {['all',  'web','mobile', 'full-stack',   'ui/ux',  'game','desktop','AI/ML' ].map((filter) => (
             <motion.button
               key={filter}
               className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}
