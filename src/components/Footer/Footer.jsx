@@ -76,7 +76,7 @@ export const Footer = () => {
             className="footer-brand"
             variants={itemVariants}
           >
-            <a href="#home" className="footer-logo">
+            <a href="#hero" className="footer-logo">
               <span className="logo-text">Portfolio</span>
               <span className="logo-dot"></span>
             </a>
