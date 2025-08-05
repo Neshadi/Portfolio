@@ -32,7 +32,7 @@ export const Projects = () => {
       title: 'Portfolio Website',
       description: 'Modern responsive portfolio with dark/light mode',
       tags: ['React', 'Framer Motion', 'SCSS'],
-      image: `${import.meta.env.BASE_URL}images/portfolio.jpg`,
+      image: `${import.meta.env.BASE_URL}images/portfolio.png`,
       category: 'web',
       githubLink: '#',
       liveLink: '#'
