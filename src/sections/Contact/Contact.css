@@ -223,6 +223,31 @@
   color: #94a3b8;
 }
 
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon {
+  width: 34px;
+  height: 34px;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+
 /* Form Fields */
 .form-field {
   margin-bottom: 1.5rem;

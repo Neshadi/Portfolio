@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FiSend, FiMapPin, FiPhone, FiMail, FiUser, FiMessageSquare } from 'react-icons/fi'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './Contact.css'
 
 export const Contact = () => {
@@ -90,7 +91,7 @@ export const Contact = () => {
                   </div>
                   <div className="method-details">
                     <h4 className="method-title">Location</h4>
-                    <p className="method-info">San Francisco, CA</p>
+                    <p className="method-info">Petta, Colombo 01</p>
                   </div>
                 </li>
                 <li className="contact-method">
@@ -99,7 +100,7 @@ export const Contact = () => {
                   </div>
                   <div className="method-details">
                     <h4 className="method-title">Phone</h4>
-                    <p className="method-info">+1 (415) 555-0123</p>
+                    <p className="method-info">+94 77 123 4567</p>
                   </div>
                 </li>
                 <li className="contact-method">
@@ -108,7 +109,7 @@ export const Contact = () => {
                   </div>
                   <div className="method-details">
                     <h4 className="method-title">Email</h4>
-                    <p className="method-info">hello@example.com</p>
+                    <p className="method-info">hiru@gmail.com</p>
                   </div>
                 </li>
               </ul>
@@ -116,10 +117,15 @@ export const Contact = () => {
               <div className="social-section">
                 <h4 className="social-title">Follow Me</h4>
                 <div className="social-links">
-                  <a href="#" aria-label="Twitter" className="social-link">𝕏</a>
-                  <a href="#" aria-label="GitHub" className="social-link">Git</a>
-                  <a href="#" aria-label="LinkedIn" className="social-link">in</a>
-                  <a href="#" aria-label="Dribbble" className="social-link">D</a>
+                <a href="#" aria-label="GitHub" className="social-link">
+                    <FaGithub className="social-icon" />
+                </a>
+                <a href="#" aria-label="LinkedIn" className="social-link">
+                    <FaLinkedin className="social-icon" />
+                </a>
+                <a href="#" aria-label="Email" className="social-link">
+                    <FaEnvelope className="social-icon" />
+                </a>
                 </div>
               </div>
             </div>
