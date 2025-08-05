@@ -21,7 +21,7 @@ export const Footer = () => {
    
     { 
       icon: <FaEnvelope />, 
-      url: 'mailto:your@email.com',
+      url: 'mailto:hiru@email.com',
       //name: 'Email',
       color: '#ff0404ff'
     }
@@ -84,11 +84,11 @@ export const Footer = () => {
               Creating digital experiences that inspire and engage
             </p>
             <div className="footer-contact">
-              <a href="mailto:your@email.com">
-                <span className="contact-icon">✉️</span> your@email.com
+              <a href="mailto:hiru@gmail.com">
+                <span className="contact-icon">✉️</span> hiru@gmail.com
               </a>
-              <a href="tel:+11234567890">
-                <span className="contact-icon">📞</span> +1 (123) 456-7890
+              <a href="tel:+94771234567">
+                <span className="contact-icon">📞</span> +94 77 123 4567
               </a>
             </div>
           </motion.div>
