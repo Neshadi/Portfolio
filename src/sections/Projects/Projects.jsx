@@ -43,30 +43,60 @@ export const Projects = () => {
       description: 'In today competitive smartphone market, leveraged Machine Learning to classify mobile phones into price ranges (Low, Medium, High, Very High) based on key technical features like battery power, RAM, and processor speed.',
       tags: ['ML','Python', 'scikit-learn', 'Pandas', 'NumPy', 'Matplotlib','SVM','Random Forest'],
       image: `${import.meta.env.BASE_URL}images/phone.jpeg`,
-      category: 'mobile',
-      githubLink: '#',
+      category: 'AI/ML',
+      githubLink: 'https://github.com/Neshadi/Mobile-Price-Classification',
       liveLink: '#'
     },
     {
       id: 5,
-      title: 'Weather Dashboard',
-      description: 'Real-time weather data visualization',
-      tags: ['React', 'Chart.js', 'API'],
-      image: `${import.meta.env.BASE_URL}images/weather-app.png`,
-      category: 'web',
-      githubLink: '#',
+      title: 'Speech Emotion Recognition (Emo-DB)',
+      description: 'Real-time emotion recognition from speech using deep learning techniques.',
+      tags: ['AI', 'ANN', 'CNN', 'TensorFlow', 'Keras', 'Python'],
+      image: `${import.meta.env.BASE_URL}images/emotion.png`,
+      category: 'AI/ML',
+      githubLink: 'https://github.com/Neshadi/Speech-Emotion-Recognition',
       liveLink: '#'
     },
     {
       id: 6,
-      title: 'Recipe Finder',
-      description: 'Discover recipes based on ingredients',
-      tags: ['Vue.js', 'Firebase', 'Spoonacular API'],
-      image: `${import.meta.env.BASE_URL}images/recipe-app.png`,
-      category: 'web',
-      githubLink: '#',
+      title: 'Federated-Learning-Based-Rainfall-Prediction-System',
+      description: 'Compare three approaches to rainfall prediction using SVR models: training local models for each weather station, training a single centralized model on combined data, and a simulated federated learning approach using prediction averaging.',
+      tags: ['AI', 'Federated Learning', 'SVM', 'Python'],
+      image: `${import.meta.env.BASE_URL}images/rainfall.png`,
+      category: 'AI/ML',
+      githubLink: 'https://github.com/Neshadi/Federated-Learning-Based-Rainfall-Prediction-System',
       liveLink: '#'
-    }
+    },
+    {
+      id: 7,
+      title: 'Portfolio Website',
+      description: 'A personal portfolio website showcasing my projects and skills.',
+      tags: ['React', 'JavaScript', 'CSS','EmailJS'],
+      image: `${import.meta.env.BASE_URL}images/portfolio.png`,
+      category: 'web',
+      githubLink: 'https://github.com/Neshadi/Portfolio',
+      liveLink: '#'
+    },
+     {
+      id: 8,
+      title: 'General Knowledge Quiz Website with PDF Score Reporting',
+      description: 'Interactive quiz web application using Next.js, enabling users to answer multiple-choice questions and download a detailed report of their quiz results as a PDF.',
+      tags: ['Next.js', 'Node.js', 'Express.js', 'Sequelize', 'MySQL', 'jsPDF', 'Tailwind CSS'],
+      image: `${import.meta.env.BASE_URL}images/quiz.png`,
+      category: 'full-stack',
+      githubLink: 'https://github.com/Neshadi/GeneralKnowledgeQuiz',
+      liveLink: '#'
+    },
+      {
+      id: 9,
+      title: 'Patient Management System',
+      description: 'A robust patient registration system built using WPF and SQLite database integration.',
+      tags: ['WPF', 'SQLite', 'C#','Entity Framework (EF) Core'],
+      image: `${import.meta.env.BASE_URL}images/patient.png`,
+      category: 'desktop',
+      githubLink: 'https://github.com/Neshadi/PatientManagementSystem',
+      liveLink: '#'
+    },
   ];
 
   const filteredProjects = activeFilter === 'all' 
