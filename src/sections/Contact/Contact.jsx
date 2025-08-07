@@ -137,25 +137,8 @@ export const Contact = () => {
                 </li>
               </ul>
               
-              <div className="social-links-labeled">
-              {[
-                { icon: <FaGithub />, url: "https://github.com/Neshadi", label: "GitHub" },
-                { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/neshadi-ranaweera-ab974a255/", label: "LinkedIn" },
-                { icon: <FaEnvelope />, url: "mailto:neshadihirunika@gmail.com", label: "Email" }
-              ].map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  aria-label={social.label}
-                  className="social-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="social-icon">{social.icon}</span>
-                  <span className="social-label">{social.label}</span>
-                </a>
-              ))}
-            </div>
+              
+
 
             </div>
           </motion.div>
