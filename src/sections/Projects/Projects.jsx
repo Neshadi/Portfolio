@@ -75,7 +75,7 @@ export const Projects = () => {
       image: `${import.meta.env.BASE_URL}images/portfolio.png`,
       category: 'web',
       githubLink: 'https://github.com/Neshadi/Portfolio',
-      liveLink: '#'
+      liveLink: 'https://Neshadi.github.io/Portfolio'
     },
      {
       id: 8,
@@ -92,11 +92,41 @@ export const Projects = () => {
       title: 'Patient Management System',
       description: 'A robust patient registration system built using WPF and SQLite database integration.',
       tags: ['WPF', 'SQLite', 'C#','Entity Framework (EF) Core'],
-      image: `${import.meta.env.BASE_URL}images/patient.png`,
+      image: `${import.meta.env.BASE_URL}images/patient.jpg`,
       category: 'desktop',
-      githubLink: 'https://github.com/Neshadi/PatientManagementSystem',
+      githubLink: 'https://github.com/Neshadi/Patient_Registration_System',
       liveLink: '#'
     },
+      {
+      id: 10,
+      title: 'Personal Finance Tracker',
+      description: 'A dynamic Personal Finance Tracker web application that allows users to manage their finances effectively by tracking income, expenses, reports, and budgets.',
+      tags: ['Html', 'CSS', 'JS'],
+      image: `${import.meta.env.BASE_URL}images/finance.jpg`,
+      category: 'GUI',
+      githubLink: 'https://github.com/Neshadi/Personal_Financial_Tracker',
+      liveLink: '#'
+    },
+      {
+      id: 11,
+      title: 'Farm Details Responsive Web Application',
+      description: 'A responsive web application for managing farm details built with wordpress.',
+      tags: ['WordPress'],
+      image: `${import.meta.env.BASE_URL}images/farm.jpg`,
+      category: 'web',
+      githubLink: '#',
+      liveLink: '#'
+    },
+     {
+      id: 12,
+      title: 'Restaurant Web Application',
+      description: 'Delicious details of a restaurant-themed web app using Atlantic theme',
+      tags: ['Angular', 'Html', 'CSS', 'TS','Atlantic Theme'],
+      image: `${import.meta.env.BASE_URL}images/restaurant.jpg`,
+      category: 'web',
+      githubLink: '#',
+      liveLink: '#'
+    }
   ];
 
   const filteredProjects = activeFilter === 'all' 
@@ -134,7 +164,7 @@ export const Projects = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {['all',  'web','mobile', 'full-stack', 'DevOps',  'ui/Ux','desktop','AI/ML' ].map((filter) => (
+          {['all',  'web','mobile', 'full-stack', 'DevOps',  'GUI','desktop','AI/ML' ].map((filter) => (
             <motion.button
               key={filter}
               className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}

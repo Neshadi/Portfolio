@@ -162,7 +162,7 @@ export const Hero = () => {
             {[
               { icon: <FiGithub />, url: "https://github.com/Neshadi", label: "GitHub" },
               { icon: <FiLinkedin />, url: "https://www.linkedin.com/in/neshadi-ranaweera-ab974a255/", label: "LinkedIn" },
-              { icon: <FiMail />, url: "neshadihirunika@gmail.com", label: "Email" }
+              { icon: <FiMail />, url: "mailto:neshadihirunika@gmail.com", label: "Email" }
             ].map((social, index) => (
               <motion.a 
                 key={index}

@@ -8,20 +8,20 @@ export const Footer = () => {
   const socialLinks = [
     { 
       icon: <FaGithub />, 
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/Neshadi',
       //name: 'GitHub',
       color: '#000000ff'
     },
     { 
       icon: <FaLinkedin />, 
-      url: 'https://linkedin.com/in/yourusername',
+      url: 'https://www.linkedin.com/in/neshadi-ranaweera-ab974a255/',
       //name: 'LinkedIn',
       color: '#1b00b5ff'
     },
    
     { 
       icon: <FaEnvelope />, 
-      url: 'mailto:hiru@email.com',
+      url: 'mailto:neshadihirunika@email.com',
       //name: 'Email',
       color: '#ff0404ff'
     }
@@ -172,7 +172,7 @@ export const Footer = () => {
             className="footer-credits"
             whileHover={{ scale: 1.05 }}
           >
-            Designed & Built with <FaHeart className="heart-icon" /> by You
+            Designed & Built with <FaHeart className="heart-icon" /> by Me
           </motion.div>
         </motion.div>
       </div>

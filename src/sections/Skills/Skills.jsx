@@ -1,64 +1,97 @@
-import { motion } from 'framer-motion'
-import './Skills.css'
+import { motion } from 'framer-motion';
+import './Skills.css';
 
-const skillsData = [
-  { 
-    name: 'HTML', 
-    level: 100, 
-    icon: '📄',
-    color: '#E44D26',
-    description: 'Semantic markup, accessibility, SEO optimization' 
-  },
-  { 
-    name: 'CSS', 
-    level: 90, 
-    icon: '🎨',
-    color: '#264DE4',
-    description: 'Responsive design, animations, CSS-in-JS, preprocessors' 
-  },
-  { 
-    name: 'JavaScript', 
-    level: 80, 
-    icon: '📜',
-    color: '#F0DB4F',
-    description: 'ES6+, functional programming, DOM manipulation' 
-  },
-  { 
-    name: 'React', 
-    level: 70, 
-    icon: '⚛️',
-    color: '#61DAFB',
-    description: 'Hooks, Context API, performance optimization' 
-  },
-  { 
-    name: 'Node.js', 
-    level: 60, 
-    icon: '🖥️',
-    color: '#68A063',
-    description: 'REST APIs, Express, middleware, authentication' 
-  },
-  { 
-    name: 'Git', 
-    level: 50, 
-    icon: '🔀',
-    color: '#F05032',
-    description: 'Version control, branching strategies, CI/CD' 
-  },
-  { 
-    name: 'UI/UX', 
-    level: 90, 
-    icon: '✨',
-    color: '#FF4081',
-    description: 'Wireframing, prototyping, user testing' 
-  },
-  { 
-    name: 'TypeScript', 
-    level: 40, 
-    icon: '📝',
-    color: '#3178C6',
-    description: 'Type safety, interfaces, generics' 
-  }
-]
+const baseSkills = [
+  "Object-Oriented Programming (OOP)",
+  "Quality Assurance & Quality Control",
+  "Object Oriented Design Principle",
+  "Object-Relational Mapping (ORM)",
+  "Machine Learning",
+  "Artificial Intelligence",
+  "Graphical User Interface (GUI)",
+  "Front-End Development",
+  "Back-End Web Development",
+  "SQL Database Management",
+  "Windows Presentation Foundation (WPF)",
+  "Figma",
+  "Docker",
+  "Jenkins",
+  "Amazon Web Services (AWS)",
+  "Go (Programming Language)",
+  "MongoDB",
+  "MySQL",
+  "Flutter",
+  "Dart",
+  "React.js",
+  "Spring Boot",
+  "Java",
+  "MERN Stack",
+  "Next.js",
+  "Material-UI",
+  "JSON Web Token (JWT)",
+  "WordPress Design",
+  "Angular",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Entity Framework (EF) Core",
+  "C++",
+  "Python",
+];
+
+// Explicit skill to icon mapping
+const skillIconMap = {
+  "Object-Oriented Programming (OOP)": "💻",
+  "Quality Assurance & Quality Control": "✅",
+  "Object Oriented Design Principle": "📐",
+  "Object-Relational Mapping (ORM)": "🗄️",
+  "Machine Learning": "🤖",
+  "Artificial Intelligence": "🧠",
+  "Graphical User Interface (GUI)": "🖥️",
+  "Front-End Development": "🎨",
+  "Back-End Web Development": "🛠️",
+  "SQL Database Management": "🗃️",
+  "Windows Presentation Foundation (WPF)": "🪟",
+  "Figma": "🖌️",
+  "Docker": "🐳",
+  "Jenkins": "🤖",
+  "Amazon Web Services (AWS)": "☁️",
+  "Go (Programming Language)": "🐹",
+  "MongoDB": "🍃",
+  "MySQL": "🐬",
+  "Flutter": "🦋",
+  "Dart": "🎯",
+  "React.js": "⚛️",
+  "Spring Boot": "🌱",
+  "Java": "☕",
+  "MERN Stack": "🧱",
+  "Next.js": "➡️",
+  "Material-UI": "🎛️",
+  "JSON Web Token (JWT)": "🔐",
+  "WordPress Design": "📝",
+  "Angular": "🅰️",
+  "HTML": "📄",
+  "CSS": "🎨",
+  "JavaScript": "📜",
+  "Entity Framework (EF) Core": "🧩",
+  "C++": "➕",
+  "Python": "🐍",
+};
+
+const defaultColor = '#4CAF50';
+
+const getIcon = (skill) => {
+  return skillIconMap[skill] || '⭐';
+};
+
+// Sort skills alphabetically
+const sortedSkills = [...baseSkills].sort((a, b) => a.localeCompare(b));
+
+const skillsData = sortedSkills.map(skill => ({
+  name: skill,
+  icon: getIcon(skill),
+  color: defaultColor
+}));
 
 export const Skills = () => {
   const containerVariants = {
@@ -66,54 +99,40 @@ export const Skills = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.15,
+        staggerChildren: 0.02,
         delayChildren: 0.3
       }
     }
-  }
+  };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { type: 'spring', stiffness: 100, damping: 10 }
+      transition: { type: 'spring', stiffness: 100, damping: 15 }
     },
     hover: {
-      y: -8,
-      boxShadow: '0 20px 40px -10px rgba(0,0,0,0.2)'
+      y: -6,
+      boxShadow: '0 15px 30px -10px rgba(0,0,0,0.15)'
     }
-  }
-
-  const progressVariants = {
-    hidden: { width: 0 },
-    visible: (level) => ({
-      width: `${level}%`,
-      transition: { 
-        duration: 1.5, 
-        type: 'spring', 
-        damping: 10,
-        stiffness: 100
-      }
-    })
-  }
+  };
 
   return (
     <section id="skills" className="skills-section">
       <div className="skills-container">
         <motion.div
           className="skills-header"
-          initial={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: -15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
         >
           <h2 className="skills-heading">Technical Expertise</h2>
           <p className="skills-subheading">Technologies I've mastered and continuously refine</p>
-          {/* <div className="skills-divider" /> */}
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           className="skills-grid"
           variants={containerVariants}
           initial="hidden"
@@ -121,17 +140,16 @@ export const Skills = () => {
           viewport={{ once: true, margin: "-100px" }}
         >
           {skillsData.map((skill, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className="skill-card"
               variants={itemVariants}
-              custom={skill.level}
               whileHover="hover"
             >
               <div className="skill-card-header">
-                <motion.span 
+                <motion.span
                   className="skill-icon"
-                  style={{ 
+                  style={{
                     backgroundColor: `${skill.color}20`,
                     color: skill.color
                   }}
@@ -141,37 +159,6 @@ export const Skills = () => {
                 </motion.span>
                 <div className="skill-info">
                   <h3 className="skill-name">{skill.name}</h3>
-                  <p className="skill-description">{skill.description}</p>
-                </div>
-                <span className="skill-percent">{skill.level}%</span>
-              </div>
-              
-              <div className="skill-bar-container">
-                <motion.div 
-                  className="skill-bar-background"
-                  initial={{ width: '100%' }}
-                />
-                <motion.div 
-                  className="skill-progress"
-                  style={{ backgroundColor: skill.color }}
-                  variants={progressVariants}
-                  custom={skill.level}
-                />
-              </div>
-              
-              <div className="skill-level-indicator">
-                <span className="level-label">Proficiency:</span>
-                <div className="level-dots">
-                  {[25, 50, 75, 100].map((threshold) => (
-                    <div 
-                      key={threshold}
-                      className="level-dot" 
-                      style={{ 
-                        opacity: skill.level >= threshold ? 1 : 0.2,
-                        backgroundColor: skill.color
-                      }} 
-                    />
-                  ))}
                 </div>
               </div>
             </motion.div>
@@ -179,5 +166,5 @@ export const Skills = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
