@@ -29,12 +29,12 @@ export const Projects = () => {
     },
     {
       id: 3,
-      title: 'Portfolio Website',
-      description: 'Modern responsive portfolio with dark/light mode',
-      tags: ['React', 'Framer Motion', 'SCSS'],
-      image: `${import.meta.env.BASE_URL}images/portfolio.png`,
-      category: 'web',
-      githubLink: '#',
+      title: 'Vehicle Tracking System',
+      description: 'Complete CI/CD pipeline for a MERN stack vehicle tracking system and deployment on AWS.',
+      tags: ['Docker', 'Jenkins', 'AWS EC2,', 'MERN stack', 'Github Webhooks'],
+      image: `${import.meta.env.BASE_URL}images/vehicle.jpeg`,
+      category: 'DevOps',
+      githubLink: 'https://github.com/Neshadi/VehicleTrackingSystem',
       liveLink: '#'
     },
     {
