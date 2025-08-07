@@ -140,24 +140,24 @@ export const Footer = () => {
           >
             <h3 className="social-heading">Let's Connect</h3>
             <div className="social-links">
-              {socialLinks.map((link, index) => (
-                <motion.a
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                  whileHover={socialHover}
-                  aria-label={link.name}
-                  style={{ backgroundColor: `${link.color}20`, borderColor: link.color }}
-                >
-                  <span className="social-icon" style={{ color: link.color }}>
-                    {link.icon}
-                  </span>
-                  {/* <span className="social-name">{link.name}</span> */}
-                </motion.a>
-              ))}
-            </div>
+            {socialLinks.map((link, index) => (
+              <motion.a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                whileHover={socialHover}
+                aria-label={link.name}
+                style={{ backgroundColor: `${link.color}20`, borderColor: link.color }}
+              >
+                <span className="social-icon" style={{ color: link.color }}>
+                  {link.icon}
+                </span>
+              </motion.a>
+            ))}
+          </div>
+
           </motion.div>
         </div>
 

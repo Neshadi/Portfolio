@@ -192,29 +192,41 @@
   left: 0;
 }
 
-.social-links {
-  display: flex;
-  gap: 1rem; /* space between each circle */
-}
-
 .social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;  /* center icon horizontally */
-  width: 44px;              /* circle size */
-  height: 44px;             /* circle size */
+  position: relative;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  padding: 0;               /* remove padding */
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid transparent;
   backdrop-filter: blur(5px);
   transition: all 0.3s ease;
+  padding: 0; /* Remove padding */
+  overflow: hidden;
 }
 
 .social-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-3px);
 }
+
+/* The icon container */
+.social-icon {
+  position: absolute; /* Position absolutely */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect center */
+  font-size: 22px;
+  color: inherit; /* inherit from inline style */
+  display: block; /* Remove flex for robust centering */
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
 
 .social-icon {
   margin: 0;                /* remove margin */
