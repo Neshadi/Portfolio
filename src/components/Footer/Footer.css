@@ -192,24 +192,24 @@
   left: 0;
 }
 
-/* .social-links {
+.social-links {
   display: flex;
-  flex-direction: column;
-  align-items: center; 
-} */
+  gap: 1rem; /* space between each circle */
+}
 
-/* .social-link {
+.social-link {
   display: flex;
   align-items: center;
-  color: white;
-  text-decoration: none;
-  padding: 0.9rem 1.2rem;
-  border-radius: 12px;
+  justify-content: center;  /* center icon horizontally */
+  width: 44px;              /* circle size */
+  height: 44px;             /* circle size */
+  border-radius: 50%;
+  padding: 0;               /* remove padding */
   background-color: rgba(255, 255, 255, 0.05);
-  transition: all 0.3s ease;
   border: 1px solid transparent;
   backdrop-filter: blur(5px);
-} */
+  transition: all 0.3s ease;
+}
 
 .social-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -217,12 +217,12 @@
 }
 
 .social-icon {
-  /* font-size: 1.2rem; */
+  margin: 0;                /* remove margin */
+  font-size: 22px;          /* icon size */
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  margin-right: 0rem;
 }
 
 .social-link:hover .social-icon {
