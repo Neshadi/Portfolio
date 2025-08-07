@@ -166,7 +166,7 @@ export const Footer = () => {
           variants={itemVariants}
         >
           <div className="copyright">
-            &copy; {currentYear} <span>Your Name</span>. All rights reserved.
+            &copy; {currentYear} <span>Neshadi</span>. All rights reserved.
           </div>
           <motion.div 
             className="footer-credits"
