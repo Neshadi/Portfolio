@@ -39,10 +39,10 @@ export const Projects = () => {
     },
     {
       id: 4,
-      title: 'Task Manager',
-      description: 'Productivity app with drag-n-drop interface',
-      tags: ['Flutter', 'Dart', 'SQLite'],
-      image: `${import.meta.env.BASE_URL}images/task-manager.png`,
+      title: 'Mobile Price Classification',
+      description: 'In today competitive smartphone market, leveraged Machine Learning to classify mobile phones into price ranges (Low, Medium, High, Very High) based on key technical features like battery power, RAM, and processor speed.',
+      tags: ['ML','Python', 'scikit-learn', 'Pandas', 'NumPy', 'Matplotlib','SVM','Random Forest'],
+      image: `${import.meta.env.BASE_URL}images/phone.jpeg`,
       category: 'mobile',
       githubLink: '#',
       liveLink: '#'
