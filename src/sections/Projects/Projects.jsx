@@ -9,23 +9,23 @@ export const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Platform',
-      description: 'Full-featured online store with cart, payments, and admin dashboard',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: `${import.meta.env.BASE_URL}images/ecommerce.png`,
-      category: 'web',
-      githubLink: '#',
+      title: 'Gym Management System',
+      description: 'Secure Signup and Login functionalities leveraging JWT-based authentication, ensuring data confidentiality and controlled access using React, Spring Boot, and MySQL.',
+      tags: ['React.js', 'SpringBoot', 'MySQL','Java', 'JWT', 'Material UI'],
+      image: `${import.meta.env.BASE_URL}images/gym.jpeg`,
+      category: 'full-stack',
+      githubLink: 'https://github.com/Neshadi/GymManagementSystemBackend',
       liveLink: '#'
     },
     {
       id: 2,
-      title: 'Fitness Tracker',
-      description: 'Mobile app for workout tracking with progress analytics',
-      tags: ['React Native', 'Firebase', 'Redux'],
-      image: `${import.meta.env.BASE_URL}images/fitness-app.png`,
-      category: 'mobile',
-      githubLink: '#',
-      liveLink: '#'
+      title: 'Virtual Interior Design Platform',
+      description: 'Full-stack e-commerce platform with 3D visualization and augmented reality furniture previews.User authentication, product catalog, AR ”try-before-you-buy” experience, and order management',
+      tags: ['React.js', 'Express.js', 'MongoDB', 'Unity', 'ARKit','.NET'],
+      image: `${import.meta.env.BASE_URL}images/ecommerce.png`,
+      category: 'full-stack',
+      githubLink: 'https://github.com/Neshadi/Funiture_site-1',
+      liveLink: 'https://www.decorit.store/'
     },
     {
       id: 3,
@@ -104,7 +104,7 @@ export const Projects = () => {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          {['all',  'web','mobile', 'full-stack',   'ui/ux',  'game','desktop','AI/ML' ].map((filter) => (
+          {['all',  'web','mobile', 'full-stack', 'DevOps',  'ui/Ux','desktop','AI/ML' ].map((filter) => (
             <motion.button
               key={filter}
               className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}

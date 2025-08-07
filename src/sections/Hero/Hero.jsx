@@ -6,7 +6,7 @@ import './Hero.css'
 
 export const Hero = () => {
   const [text] = useTypewriter({
-    words: ['Developer', 'Designer', 'Creator', 'Problem Solver', 'Innovator'],
+    words: ['Undergraduate', 'Developer',  'Problem Solver', 'Trainee Software Engineer'],
     loop: true,
     typeSpeed: 70,
     deleteSpeed: 50,
@@ -120,8 +120,11 @@ export const Hero = () => {
             variants={itemVariants}
             whileHover={{ x: 5 }}
           >
-            Crafting digital experiences that blend innovation with functionality.
-            Specializing in modern web technologies and user-centered design.
+            Passionate Computer Engineering student at the University of Ruhuna with strong expertise in full-stack development,
+            machine learning, and cloud technologies. Skilled in designing scalable software solutions, optimizing system
+            performance, and implementing AI-driven applications. Adept at backend development , frontend development,
+            and mobile development. Experienced in machine learning and cloud deployment. Seeking opportunities to
+            leverage technical skills in software engineering to build innovative solutions in a fast-paced environment.
           </motion.p>
 
           <motion.div 
@@ -157,9 +160,9 @@ export const Hero = () => {
             variants={itemVariants}
           >
             {[
-              { icon: <FiGithub />, url: "#", label: "GitHub" },
-              { icon: <FiLinkedin />, url: "#", label: "LinkedIn" },
-              { icon: <FiMail />, url: "#", label: "Email" }
+              { icon: <FiGithub />, url: "https://github.com/Neshadi", label: "GitHub" },
+              { icon: <FiLinkedin />, url: "https://www.linkedin.com/in/neshadi-ranaweera-ab974a255/", label: "LinkedIn" },
+              { icon: <FiMail />, url: "neshadihirunika@gmail.com", label: "Email" }
             ].map((social, index) => (
               <motion.a 
                 key={index}

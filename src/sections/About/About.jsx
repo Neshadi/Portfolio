@@ -79,14 +79,14 @@ export const About = () => {
                 className="highlight-text"
                 whileHover={{ x: 5 }}
               >
-                I craft digital solutions that blend functionality with beautiful design.
+                Building the Future with Code & Creativity.
               </motion.p>
               
               <div className="about-paragraphs">
                 <motion.p
                   whileHover={{ x: 3 }}
                 >
-                  As a full-stack developer with a passion for user experience, I specialize in building responsive web applications that delight users. My background in both development and design allows me to bridge the gap between technical implementation and visual appeal.
+                  As a Computer Engineering student at Faculty of Engineering ,University of Ruhuna, I thrive at the intersection of development and innovation. With hands-on experience in React, Spring Boot, and cloud technologies, I build scalable web applications, while my expertise in machine learning (CNN, LSTM) and DevOps (Docker, AWS) allows me to deploy intelligent, production-ready systems. My projects—like an AR-powered e-commerce platform and a CI/CD pipeline for vehicle tracking—reflect my ability to merge cutting-edge tools with real-world problem-solving. Beyond code, I actively contribute to tech communities and continuously expand my skills through certifications and competitions.
                 </motion.p>
                 
                 <motion.p

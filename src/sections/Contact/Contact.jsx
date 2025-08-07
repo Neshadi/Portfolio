@@ -1,51 +1,74 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
-import { FiSend, FiMapPin, FiPhone, FiMail, FiUser, FiMessageSquare } from 'react-icons/fi'
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+import { FiSend, FiMapPin, FiPhone, FiMail, FiUser, FiMessageSquare } from 'react-icons/fi';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import './Contact.css'
+import './Contact.css';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
-  })
+  });
 
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitMessage, setSubmitMessage] = useState(null)
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState(null);
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
-    }))
-  }
+    }));
+  };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData)
-      setIsSubmitting(false)
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Initialize EmailJS with your Public Key
+    emailjs.init('KiqjJiKoBYWH2Ue93');
+
+    // Send email to you (neshadihirunika@gmail.com)
+    emailjs.send(
+      'service_efkzznb',  // Replace with your EmailJS Service ID
+      'template_79v3idc', // Replace with your EmailJS Template ID
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        to_email: 'neshadihirunika@gmail.com',
+        message: formData.message
+      }
+    )
+    .then((response) => {
+      console.log('Email sent successfully!', response.status, response.text);
       setSubmitMessage({
         type: 'success',
         text: 'Your message has been sent successfully!'
-      })
+      });
       setFormData({
         name: '',
         email: '',
         message: ''
-      })
-      
-      // Clear message after 5 seconds
+      });
+    })
+    .catch((error) => {
+      console.error('Failed to send email:', error);
+      setSubmitMessage({
+        type: 'error',
+        text: 'Failed to send message. Please try again later.'
+      });
+    })
+    .finally(() => {
+      setIsSubmitting(false);
       setTimeout(() => {
-        setSubmitMessage(null)
-      }, 5000)
-    }, 1500)
-  }
+        setSubmitMessage(null);
+      }, 5000);
+    });
+  };
+
+  
 
   return (
     <section id="contact" className="contact-section">
@@ -109,7 +132,7 @@ export const Contact = () => {
                   </div>
                   <div className="method-details">
                     <h4 className="method-title">Email</h4>
-                    <p className="method-info">hiru@gmail.com</p>
+                    <p className="method-info">neshadihirunika@gmail.com</p>
                   </div>
                 </li>
               </ul>
